@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #FFF8F0;
+  --bg-accent: #FFF0E0;
+  --bg-gradient-start: #FFFFFF;
+  --bg-gradient-mid: #FFF8F0;
+  --bg-gradient-end: #FFE8D1;
+  --text-primary: #1F2937;
+  --text-secondary: #4B5563;
+  --text-accent: #6B7280;
+  --accent-orange: #FF6B35;
+  --accent-orange-light: #FF8C42;
+  --accent-orange-bright: #FF4500;
+  --accent-white: #FFFFFF;
+  --accent-gray: #F3F4F6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-mid) 50%, var(--bg-gradient-end) 100%);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--accent-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-orange);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-orange-bright);
+}
+
+/* Utility classes */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (prefers-color-scheme: light) {
+  .glassmorphism {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.gradient-border {
+  position: relative;
+  background: linear-gradient(45deg, var(--accent-orange), var(--accent-yellow), var(--accent-white));
+  padding: 2px;
+  border-radius: 8px;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: var(--bg-dark);
+  border-radius: 6px;
+}
+
+@media (prefers-color-scheme: light) {
+  .gradient-border::before {
+    background: var(--bg-light);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
