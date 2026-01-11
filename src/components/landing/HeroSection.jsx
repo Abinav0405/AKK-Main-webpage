@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, ExternalLink } from 'lucide-react';
+import { ChevronDown, ExternalLink, Clock, Package } from 'lucide-react';
 import FloatingShapes from './FloatingShapes';
 
 export default function HeroSection({ logo }) {
@@ -90,17 +90,46 @@ export default function HeroSection({ logo }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#B91C4A]/10 text-[#B91C4A] text-sm font-medium mb-10"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#B91C4A]/10 text-[#B91C4A] text-sm font-medium mb-6"
         >
           <span className="w-2 h-2 rounded-full bg-[#B91C4A] animate-pulse" />
           ENGINEERING EXCELLENCE SINCE 2019
+        </motion.div>
+
+        {/* Digital Tools Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10"
+        >
+          <a
+            href="https://timesheet-manager.akk.sg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group px-6 py-3 bg-gradient-to-r from-[#DC6B2F] to-[#B91C4A] text-white rounded-full font-semibold text-base shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center gap-2"
+          >
+            <Clock className="w-4 h-4" />
+            Timesheet Manager
+            <ExternalLink className="w-4 h-4 opacity-70" />
+          </a>
+          <a
+            href="https://material-tracker.akk.sg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group px-6 py-3 bg-gradient-to-r from-[#B91C4A] to-[#DC6B2F] text-white rounded-full font-semibold text-base shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center gap-2"
+          >
+            <Package className="w-4 h-4" />
+            Material Tracker
+            <ExternalLink className="w-4 h-4 opacity-70" />
+          </a>
         </motion.div>
 
         {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <a

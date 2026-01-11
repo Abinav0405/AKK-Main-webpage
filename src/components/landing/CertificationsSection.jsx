@@ -9,7 +9,7 @@ const certifications = [
     description: 'Occupational Health & Safety Management System',
     scope: 'Provision of Building Construction, Mechanical & Electrical Works',
     certNumber: 'BQSR17249',
-    validUntil: '12/08/2025',
+    validUntil: '25/08/2028',
     image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69630166e34bf8c82065bceb/7bf4e4f99_image.png',
     badge: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69630166e34bf8c82065bceb/02895a56a_image.png'
   },
@@ -18,8 +18,8 @@ const certifications = [
     issuer: 'Workplace Safety and Health Council',
     description: 'The highest level of bizSAFE certification',
     certNumber: 'E34218',
-    validUntil: '12/08/2025',
-    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69630166e34bf8c82065bceb/a70733fea_image.png',
+    validUntil: '25/08/2028',
+    image: '/cert1.jpeg',
     badge: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69630166e34bf8c82065bceb/690d9be92_image.png'
   }
 ];

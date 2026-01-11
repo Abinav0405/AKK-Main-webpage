@@ -4,7 +4,7 @@ import { Building2, Award, Shield, Users } from 'lucide-react';
 
 const stats = [
   { icon: Building2, label: 'Incorporated', value: '2019' },
-  { icon: Award, label: 'BCA License', value: 'ME05-L1' },
+  { icon: Award, label: 'BCA License', value: 'ME05-L1, ME06-L1' },
   { icon: Shield, label: 'Core Business', value: 'Electrical' },
   { icon: Users, label: 'Sectors', value: 'Public & Private' },
 ];
@@ -48,7 +48,7 @@ export default function AboutSection() {
                 We provide quality services for <span className="font-semibold">Electrical Engineering</span> and <span className="font-semibold">Tele-communications installations</span> for construction industries, both in public and private sectors.
               </p>
               <p className="text-gray-600 leading-relaxed text-lg">
-                AKK ENGINEERING PTE. LTD. is in operation in Singapore and was incorporated on <span className="font-semibold">30th May 2019</span>. We are a registered company with Building Construction Authority as <span className="text-[#B91C4A] font-semibold">ME05 – L1</span> and our main core of business is in Electrical Engineering.
+                AKK ENGINEERING PTE. LTD. is in operation in Singapore and was incorporated on <span className="font-semibold">30th May 2019</span>. We are a registered company with Building Construction Authority as <span className="text-[#B91C4A] font-semibold">ME05 Electrical engineering grade L1 expiry date 01/06/2028</span> and <span className="text-[#B91C4A] font-semibold">ME06 Fire Prevention & Protection Systems Grade:L1 expiry date 01/06/2028</span>, and our main core of business is in Electrical Engineering.
               </p>
             </div>
 
